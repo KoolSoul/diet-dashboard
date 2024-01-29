@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+        "logo header"
+        "sidebar main";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 170px 1fr;
+    height: 100vh;
+}
+
+#logo {
+    grid-area: logo;
+    padding: 10px;
+    background-color: #fdfdfd;
+    width: 180px;
+}
+
+#logo img {
+    width: 120px;
+    height: auto;
+    margin-left: 20px;
+}
+
+h1 {
+    grid-area: header;
+    background-color: #ffffff;
+    margin: 0;
+    font-size: 40px;
+    padding-top: 66px;
+    padding-right: 66px;
+    padding-bottom: 66px;
+    padding-left: 10px;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: left;
+    width: 170px;
+    font-size: 20px;
+}
+
+#main-content {
+    grid-area: main;
+    padding: 10px;
+}
+
+#footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#date-time-display {
+    position: absolute; 
+    right: 10px; 
+    top: 10px; 
+}
